@@ -4,9 +4,10 @@ import { LayoutModule } from './layout/layout.module';
 import { LayoutComponent } from './layout/layout.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { HerosComponent } from './layout/heros/heros.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', component: LayoutComponent},
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'heros', component: HerosComponent }
 ];
