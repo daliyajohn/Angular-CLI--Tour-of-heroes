@@ -1,0 +1,36 @@
+main {
+    background-image: url(/assets/images/backgrnd.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    padding: 50px;
+    max-width: 100%;
+    .main-container {
+        padding: 0px 19px 13px 19px;
+        float: left;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        float: left;
+        ul {
+            margin: 0;
+            float: left;
+            padding: 0;
+            li {
+                float: left;
+                list-style: none;
+                padding: 19px;            
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 300;
+                    letter-spacing: 2px;
+                }
+            }
+        
+        }
+    }
+}
