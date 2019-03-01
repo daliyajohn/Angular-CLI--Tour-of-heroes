@@ -4,12 +4,15 @@ import { LayoutComponent } from './layout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HerosComponent } from './heros/heros.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [LayoutComponent, DashboardComponent, HerosComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     LayoutComponent
