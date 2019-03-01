@@ -2,21 +2,18 @@
     <div class="hero-container p-5 mt-5">
       <div class="row">
         <div class="col-sm-5">
-
           <form [formGroup]="addHeroForm" (ngSubmit)="addHero(addHeroForm)">
             <input type="text" formControlName="name">
             <button type="submit" class="ml-2">ADD</button>
           </form>
-
-
-
-          <div *ngFor="let hero of [0, 1, 2, 3]">
-            <div>
-              <div class="col-sm-8"></div>
-              <div class="col-sm-4"></div>
+          <div class="hero-list mt-4" *ngFor="let hero of [0, 1, 2, 3]">
+            <div class="row">
+              <div class="col-sm-10">s</div>
+              <div class="col-sm-2">
+                <button type="submit">X</button>
+              </div>
             </div>
           </div>
-          
         </div>
     </div>
   </div>
