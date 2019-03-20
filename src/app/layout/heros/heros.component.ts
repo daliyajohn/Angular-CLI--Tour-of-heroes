@@ -18,9 +18,9 @@ export class HerosComponent implements OnInit {
 
 
   addHero(heroName: any) {
-    if (this.addHeroForm.valid) {
-      console.log(heroName.value);
-    }
+    // if (this.addHeroForm.valid) {
+    //   console.log(heroName.value);
+    // }
   }
 
 
