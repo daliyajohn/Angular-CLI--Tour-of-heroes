@@ -8,6 +8,13 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class HerosService {
+  private heroesUrl = 'http://dummy.restapiexample.com/api/v1/employees';
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  createHero(name): Observable<any> {
+    return this.http.post(this.heroesUrl, name);
+    console.log('jjjj');
+  }
+
 }

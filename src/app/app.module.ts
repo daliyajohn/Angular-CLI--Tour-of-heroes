@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './layout/layout.module';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HerosService } from './heros.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { HerosService } from './heros.service';
     AppRoutingModule,
     LayoutModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [HerosService],
   bootstrap: [AppComponent]
